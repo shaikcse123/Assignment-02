@@ -1,0 +1,505 @@
+/*----------- google-fonts start --------- */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400&family=Ubuntu:wght@500&display=swap');
+
+/* ------------ common ------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #ff0a54;
+    --p-color: #a4a4a7;
+    --footer-color: #0a0826;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+/* ----------------navbar-section style-------------- */
+
+.nav-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: absolute;
+    top: 0;
+}
+
+.nav-left img {
+    width: 500px;
+    height: 100px;
+}
+
+.nav-right {
+    position: relative;
+    right: -450px;
+}
+
+#icon {
+    border: none;
+}
+
+#icon:hover {
+    color: var(--main-color);
+}
+
+.nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.nav-right li {
+    display: inline-block;
+    float: none;
+}
+
+.nav-right li a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-right li:hover a {
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+.nav-right li:hover ul a:hover {
+    color: #000;
+}
+
+
+.nav-right li ul {
+    display: none;
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+input[type=checkbox]:checked~#menu {
+    display: block;
+}
+
+
+/* ----------------hero-section style-------------- */
+.hero-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left {
+    padding-right: 200px;
+}
+
+.hero-left h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-left p {
+    color: var(--p-color);
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-left a {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    transition: .4s;
+}
+
+.hero-left a:hover {
+    box-shadow: 5px 5px 10px var(--main-color);
+}
+
+/* ----------------brands-section style-------------- */
+.brands-main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    padding: 30px 50px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(to right, rgb(151, 151, 151), rgb(100, 99, 96));
+    border-image-slice: 80 10;
+}
+
+.brands-image {
+    text-align: center;
+}
+
+.brands-image img {
+    transition: .5s;
+}
+
+.brands-image img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+/* ----------------popular-collection-section style-------------- */
+.section-title h1 {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.collection-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px 60px;
+}
+
+.collection {
+    padding: 10px 15px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.collection:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.collection .collection-banner img {
+    width: 100%;
+}
+
+.collection-details p {
+    margin: 0;
+}
+
+.fa-star {
+    color: rgba(128, 128, 128, 0.562);
+}
+
+.fillup {
+    color: orange;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    text-align:justify;
+}
+
+.review i {
+    font-size: 12px;
+   
+}
+
+.review span {
+    color: var(--main-color);
+    margin-left: 10px;
+}
+
+.see-more-btn a {
+    float: right;
+    margin-right: 70px;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.see-more-btn a:hover {
+    transform: scale(1.1);
+}
+
+
+/* ----------------contact-section style-------------- */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.contact h1 {
+    line-height: 35px;
+    font-size: 28px;
+}
+
+.contact-left a {
+    text-decoration: none;
+    padding: 10px 50px;
+    color: white;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    transition: .4s;
+}
+
+.contact-left a:hover {
+    box-shadow: 5px 5px 10px var(--main-color);
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-right {
+    flex: 1;
+}
+
+.contact-right img {
+    width: 90%;
+    float: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+/* ----------------contact-form style-------------- */
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 375px;
+    height: 50px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(255, 0, 140);
+}
+
+/* ----------------footer-section style-------------- */
+.footer {
+    background-color: var(--footer-color);
+    text-align: center;
+    color: white;
+}
+
+.footer-details {
+    padding: 30px 0px;
+}
+
+.footer-details h2,
+p,
+h5 {
+    margin: 0;
+}
+
+.footer-details p,
+h5 {
+    color: var(--p-color);
+}
+
+.media-icon {
+    margin-top: 15px;
+}
+
+.media-icon i {
+    font-size: 25px;
+    padding: 0 10px;
+    transition: .5s;
+    color: var(--p-color);
+}
+
+.media-icon i:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+/*---------------Responsive Styles For Mobile--------------*/
+@media screen and (max-width : 760px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    /* nav-bar media queries */
+    .nav-right {
+        right: 0;
+    }
+
+    .nav-main .nav-left img {
+        width: 100px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .nav-right ul {
+        position: static;
+        display: none;
+    }
+
+    .nav-right li {
+        margin-bottom: 1px;
+    }
+
+    .nav-right ul li,
+    li a {
+        width: 100%;
+    }
+
+    .nav-right li a {
+        padding: 5px 0px;
+        color: white;
+    }
+
+    .show-menu {
+        display: block;
+        margin-top: 5px;
+        background: none;
+    }
+
+    .menu-bar {
+        margin-left: 150px;
+    }
+
+    input[type=checkbox]:checked~#menu {
+        display: block;
+        margin-right: 45px;
+        background: var(--main-color);
+    }
+
+
+    /* hero-section media queries */
+    .hero-main {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .hero-left {
+        padding-right: 0px;
+        order: 2;
+    }
+
+    .hero-left h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero-left p {
+        font-size: 15px;
+       
+    }
+
+    .hero-right {
+        order: 1;
+    }
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    /* brands-section media queries */
+    .brands-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+        border: none;
+    }
+
+    /* popular-collection-section media queries */
+    .collection-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 5px 15px;
+    }
+
+    .see-more-btn a {
+        float: none;
+        margin-left: 30px;
+    }
+
+    /* contact-section media queries */
+    .contact {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .contact-right img {
+        width: 80%;
+        float: none;
+        margin: 35px 35px;
+    }
+
+    input {
+        width: 100%;
+        height: 50px;
+        padding: 0px 10px;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+
+}
+
+/*Responsive Styles For Mobile*/
+@media screen and (min-width: 761px) and (max-width:868px) {
+    .nav-main {
+        padding: 0 15px;
+    }
+
+    .nav-right {
+        right: 0px;
+    }
+
+    .hero-main {
+        padding: 0px 20px;
+    }
+
+    .hero-left {
+        padding-right: 0px;
+    }
+
+    .brands-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-image-slice: 120 10;
+        grid-row-gap: 30px;
+    }
+
+    .collection-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact {
+        padding: 0px 25px;
+    }
+}
