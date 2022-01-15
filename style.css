@@ -31,8 +31,9 @@ body {
 }
 
 .nav-left img {
-    width: 500px;
+    width: 150px;
     height: 100px;
+    
 }
 
 .nav-right {
@@ -213,12 +214,10 @@ input[type=checkbox]:checked~#menu {
 .review {
     display: flex;
     align-items: center;
-    text-align:justify;
 }
 
 .review i {
     font-size: 12px;
-   
 }
 
 .review span {
@@ -416,7 +415,6 @@ h5 {
 
     .hero-left p {
         font-size: 15px;
-       
     }
 
     .hero-right {
